@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Numbers Page";
+}
+@model int[]
+<div class="text-center">
+    <h1 class="display-4">Here are some numbers!</h1>
+    <div style="border:1px solid black; width:200px">
+        @{
+            foreach (int number in @Model)
+            {
+                <p>@number</p>
+            }
+        }
+    </div>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
